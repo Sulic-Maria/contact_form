@@ -1,0 +1,84 @@
+*{
+    font-family: 'Overlock', cursive;
+    box-sizing: border-box;
+}
+body{
+    padding: 20px;
+    background-image: url("./aj-McsNra2VRQQ-unsplash.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: lighten;
+    height: 100vh;
+}
+.main{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+    background-color: #8379714d;
+    border-radius: 6px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+@media only screen and (max-width: 600px) {
+    .main{
+        display: flex;
+        flex-direction: column;
+    }
+}
+.info{
+    padding: 12px 24px 0px 24px;
+}
+.info>div>p:nth-child(1){
+    font-weight: 900;
+    letter-spacing: 2px;
+}
+.info>div>p:nth-child(2){
+    margin-bottom: 24px;
+}
+p, h2{
+    margin: 4px;
+}
+
+form{
+    background-color: #e6ddd6;
+    max-width: 600px;
+    width: 100%;
+    padding: 6px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ccbcaf;
+}
+.form-group{
+    margin: 12px;
+    display: flex;
+    flex-direction: column;
+}
+label{
+    font-weight: 600;
+    margin-bottom: 3px;
+}
+input{
+    height: 32px;
+}
+input, textarea{
+    outline: none;
+    border-radius: 5px;
+    border: 2px solid transparent;
+    padding: 6px;
+}
+input:focus, textarea:focus{
+    border: 2px solid #837971;
+}
+.btn{
+    height: 40px;
+    width: 140px;
+    font-size: large;
+    margin: 6px auto;
+    border-radius: 5px;
+    border: none;
+    transition: background-color 0.5s ease;
+}
+.btn:hover{
+    background-color: #ccbcaf;
+}
